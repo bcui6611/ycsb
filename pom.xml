@@ -125,6 +125,7 @@ LICENSE file.
     <module>redis</module>
     <module>s3</module>
     <module>solr</module>
+    <module>spongebase</module>
     <module>tarantool</module>
     <!--<module>voldemort</module>-->
   </modules>
