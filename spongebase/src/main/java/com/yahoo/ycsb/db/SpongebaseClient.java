@@ -50,7 +50,6 @@ public class SpongebaseClient extends DB {
   public static final String STALE_PROPERTY = "spongebase.stale";
   public static final String SCAN_PROPERTY = "scanproportion";
 
-  public static final String STALE_PROPERTY_DEFAULT = Stale.OK.name();
   public static final String SCAN_PROPERTY_DEFAULT = "0.0";
 
   protected static final ObjectMapper JSON_MAPPER = new ObjectMapper();
