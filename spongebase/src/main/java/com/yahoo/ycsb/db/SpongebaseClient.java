@@ -59,8 +59,6 @@ public class SpongebaseClient extends DB {
   private ReplicateTo replicateTo;
   private boolean checkFutures;
   private boolean useJson;
-  private String designDoc;
-  private String viewName;
   private final Logger log = LoggerFactory.getLogger(getClass());
 
   @Override
@@ -76,9 +74,6 @@ public class SpongebaseClient extends DB {
 
     persistTo = parsePersistTo(props.getProperty(PERSIST_PROPERTY, "0"));
     replicateTo = parseReplicateTo(props.getProperty(REPLICATE_PROPERTY, "0"));
-
-    designDoc = getProperties().getProperty(DESIGN_DOC_PROPERTY);
-    viewName = getProperties().getProperty(VIEW_PROPERTY);
 
     Double scanproportion = Double.valueOf(props.getProperty(SCAN_PROPERTY, SCAN_PROPERTY_DEFAULT));
 
