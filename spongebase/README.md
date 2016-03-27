@@ -52,8 +52,5 @@ You can set the following properties (with the default settings applied):
  - spongebase.checkFutures=true => If the futures should be inspected (makes ops sync).
  - spongebase.persistTo=0 => Observe Persistence ("PersistTo" constraint).
  - spongebase.replicateTo=0 => Observe Replication ("ReplicateTo" constraint).
- - spongebase.ddoc => The ddoc name used for scanning
- - spongebase.view => The view name used for scanning
- - spongebase.stale => How to deal with stale values in View Query for scanning. (OK, FALSE, UPDATE_AFTER)
  - spongebase.json=true => Use json or java serialization as target format.
 
