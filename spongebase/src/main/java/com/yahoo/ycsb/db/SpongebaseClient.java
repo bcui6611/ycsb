@@ -62,8 +62,6 @@ public class SpongebaseClient extends DB {
   private boolean useJson;
   private String designDoc;
   private String viewName;
-  private Stale stale;
-  private View view;
   private final Logger log = LoggerFactory.getLogger(getClass());
 
   @Override
@@ -82,7 +80,6 @@ public class SpongebaseClient extends DB {
 
     designDoc = getProperties().getProperty(DESIGN_DOC_PROPERTY);
     viewName = getProperties().getProperty(VIEW_PROPERTY);
-    stale = Stale.valueOf(getProperties().getProperty(STALE_PROPERTY, STALE_PROPERTY_DEFAULT).toUpperCase());
 
     Double scanproportion = Double.valueOf(props.getProperty(SCAN_PROPERTY, SCAN_PROPERTY_DEFAULT));
 
@@ -97,7 +94,7 @@ public class SpongebaseClient extends DB {
     }
 
     if (scanproportion > 0) {
-        throw new DBException(String.format("scan operation not supported"));
+      throw new DBException(String.format("scan operation not supported"));
     }
   }
 

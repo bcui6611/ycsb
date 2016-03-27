@@ -24,7 +24,7 @@ Copyright (c) 2016 Sponge Data Inc. All rights reserved.
             <artifactId>spongebase-client</artifactId>
             <version>1.0</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/spongebase/src/main/resources/spongebase-client-1.0-SNAPSHOT.jar</systemPath>
+            <systemPath>${project.basedir}/src/main/resources/spongebase-client-1.0-SNAPSHOT.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.yahoo.ycsb</groupId>
